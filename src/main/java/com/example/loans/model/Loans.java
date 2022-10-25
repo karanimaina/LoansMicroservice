@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Loans {
+public class Loan {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
    private long id;

@@ -21,7 +21,7 @@ public class LoanService {
     public Loan addLoan(Loan loan){
         return loansRepo.save(loan);
     }
-    public  void addLoan(long loanId){
+    public  void deleteLoan(long loanId){
        loansRepo.deleteById(loanId);
     }
 

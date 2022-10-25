@@ -13,8 +13,8 @@ import javax.persistence.Id;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-//@Getter
-//@Setter
+@Getter
+@Setter
 public class Loans {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

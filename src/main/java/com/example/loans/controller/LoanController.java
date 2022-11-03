@@ -16,7 +16,7 @@ public class LoanController{
     private final LoanService  loanService;
 @GetMapping("/get/loans")
     ResponseEntity<UniversalResponse>getLoans(){
-     List<Loan>loans =loanService.getLoans();
+     List<Loan>loans = loanService.getLoans();
      return ResponseEntity.ok().body(UniversalResponse.builder().status(200).data(loans).message("dataretrieved successfull").build());
  }
    @GetMapping("/get/{id}")
